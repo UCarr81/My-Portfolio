@@ -1,0 +1,59 @@
+:root {
+    --head: rgb(0, 0, 0);
+    --nav: red;
+}
+body {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
+    justify-content: flex-start;
+}
+
+body header {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    background-color: var(--head);
+    color: rgb(28, 117, 218);
+    position: sticky;
+    top: 0;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 1200px;              
+    }
+}
