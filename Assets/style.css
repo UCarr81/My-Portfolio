@@ -40,13 +40,31 @@ nav a:hover {
 }
 
 main {
+    font-size: 150%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding-left: 100px;
+    text-align: right;
+}
+
+main p {
+    font-size: 60%;
+    padding: 60px 50px;
+    text-align: left;
+    
+}
+
+article h1 {
+    font-size: 150%;
 }
 
 img {
     width: 30%;
+    border: 6px solid black;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
     header {
