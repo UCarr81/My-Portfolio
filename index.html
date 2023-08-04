@@ -12,19 +12,15 @@
      <header>
       <h1>My Portfolio</h1>
     <nav>
-        <ul>
-         <a href="#">Blogs</a>
-         <a href="#">Achievments</a>
-         <a href="#">Contact Me</a>
-         <a href="#">Resume</a>
-         <a href="#">About Me</a>
-        </ul>
+         <ul><a href="#" id="About-Me">About Me</a></ul>
+         <ul><a href="#" id="Work">Work</a></ul>
+         <ul><a href="#" id="Resume">Resume</a></ul>
+         <ul><a href="#" id="Contact-Me">Contact Me</a></ul>
     </nav>
      </header>
     </body>
 
-
-    <main>
+    <main id="About-Me">
         <h1>About Me</h1>
         </code><p>Welp I will edit this in time but for now enjoy some lorem ipsum! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             
@@ -32,20 +28,21 @@
     </code>
     </main>
 
-    <article class="Achievments">
-        <h1>Work</h1>
-        <section class="box1">
-            <h2>Css Cheatsheet</h2>
-            <img src="Images/placeholderimage.png"/> 
-        </section>
-
-        <section class="box2">
-            <h2>Module 1</h2>
-            <img src="Images/placeholderimage.png"/>
-        </section>
+    <article id="Work">
+        <div class="box-wrapper">
+                <div class="right-column">
+                    <div id="box1">
+                        <h2>G35 2008</h2>
+                        <figure><img src="./Images/depositphotos_537370102-stock-illustration-image-photo-sign-symbol-template.jpg"></figure>
+                    </div>
+                    <div id="box2">
+                        <h2>My CheatSheet</h2>
+                        <figure><img src="./Images/depositphotos_537370102-stock-illustration-image-photo-sign-symbol-template.jpg"/></figure>
+                    </div>
     </article>
     
-    <aside>
+    <aside id="Contact-Me">
+        <div>
         <h2>Contact Me</h2>
         <form>
             <input type="text" placeholder="Your Name"/>
@@ -54,6 +51,10 @@
             <input class="message" type="text" placeholder="Message"/>
             <button>Send</button>
         </form>
+        <section class="me">
+            <img src="./Images/Person PlaceHolder.png"/>    
+        </section>
+        </div>
     </aside>    
 
     <footer>

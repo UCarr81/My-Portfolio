@@ -1,7 +1,10 @@
 :root {
     --head: rgb(0, 0, 0);
     --nav: red;
+    --card: white;
+    --signature: rgb(28, 117, 218);
 }
+
 body {
     font-size: 20px;
     display: flex;
@@ -17,15 +20,54 @@ body header {
     align-items: center;
     padding: 2px;
     background-color: var(--head);
-    color: rgb(28, 117, 218);
+    color: var(--signature);
     position: sticky;
     top: 0;
+    z-index: 100;
+}
+
+.box-wrapper {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.right-column img {
+    width: 80%;
+    border: 10px double var(--signature);
+    position: relative;
+}
+
+.right-column figure img {
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.right-column figure:hover img {
+    -webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+.right-column div {
+    flex-grow: 1;
 }
 
 
 
+
 nav ul {
-    display: flex;
+    display: inline;
     justify-content: space-between;
     min-width: 300px;
 }
@@ -63,28 +105,10 @@ article h1 {
     
 }
 
-img {
-    width: 100%;
-    border: 6px solid black;                  
-}    
-
-.box1 {
-    margin: 25px;
-    display: flex;
-    flex-direction: row-reverse; 
-}
-
-.box2 {
-    display: inline-block;
-    width: 20%;
-    margin-left: 20px;
-
-    
-}
-
 aside {
     width: 25%;  
-    text-align: center; 
+    text-align: left;
+    color: var(--signature);
 }
 
 aside h2 {
@@ -98,6 +122,7 @@ input, button {
     padding: 2%;
     box-shadow: 5px 5px 10px black;
     text-align: center;
+
 }
 
 .message {
@@ -105,6 +130,11 @@ input, button {
     height: 200px;
    
 }
+.me img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+} 
 
 footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -112,19 +142,20 @@ footer {
     position: relative;
     bottom: 0;
     text-align: center;
-    background-color: black;
+    background-color: black;          
     color: white;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     main {
         max-width: 1200px;              
+    }
+
+    article {
+        max-width: 1200px;
     }
 }
