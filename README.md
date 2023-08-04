@@ -1,5 +1,6 @@
 # My-Portfolio
-This Is my current Portfolio of What ive learned over the past couple of months in University Of Oregon. I will be implementing codes that ive learned into this Porfolio!
+This is my current Portfolio of what I've learned over the past academy! I've definitely stressed over this more than I should've, and I definently need more practice accomplishing much more. However, enjoy my simple website that I have created! moving forward I will continue to update this as it was a fun mini project. I wish I hadn't let this sit aside for so long, regardless I believe its a great starting project.
+Ill let the website speak for itself now, enjoy.
 
 ## Rules!
 
